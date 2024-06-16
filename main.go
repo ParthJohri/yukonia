@@ -70,33 +70,15 @@ func main() {
 			Tags:        []string{"gardening", "whimsical", "magic"},
 		},
 	}
-
-	videosTemplate := `
-<link rel="stylesheet" href="../style.css">
-<style>
-    .video div.text-right {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
-<ul>
-    {{range .}}
-        <div class = "video background">
-            <h2>{{.Title}}</h2>
-            <a href="{{.PageURL}}"><img src="{{.Thumbnail}}"  width="320" height="240" class=""></a>
-            <div class="text-right">
-			<div class="description" style="display: flex; align-items:center;">{{.Description}}</div>
-            <div class="tags ">Tags: {{range .Tags}}<a href="#">{{.}}</a> {{end}}</div>
-			</div>
-        </div>
-    {{end}}
-</ul>
-`
+	videosTemplate := ""
+	f, err := os.ReadFile("video.templ")
+	if err != nil {
+		log.Fatal(err)
+	}
+	videosTemplate = string(f)
 
 	buildDir := filepath.Join("build")
-	err := os.MkdirAll(buildDir, os.ModePerm)
+	err = os.MkdirAll(buildDir, os.ModePerm)
 	if err != nil {
 		log.Fatal(err)
 	}
