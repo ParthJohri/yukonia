@@ -1,0 +1,27 @@
+<title>Video</title>
+    <link rel="stylesheet" href="../style.css">
+    <main>
+        <div class="video">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="sidebar">
+            {{range .}}
+            <a href="{{ .PageURL }}">
+                <h3>{{ .Title }}</h3>
+            <ul>
+                <li>
+                    <img src="{{.Thumbnail}}" alt="Thumbnail">
+                    <div>
+                        <p class="title">{{ .Title }}</p>
+                        <p class="tags">
+                            {{range .Tags}}
+                            <a href="#">{{ . }}</a>
+                            {{end}}
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            </a>
+        {{end}}
+    </div>
+</main>
