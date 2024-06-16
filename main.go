@@ -22,56 +22,33 @@ type Video struct {
 func main() {
 	videos := []Video{
 		{
-			Title:       "Me at the zoo",
+			Title:       "Hugo Actually Explained (Websites, Themes, Layouts, and Intro to Scripting)",
 			Thumbnail:   "../thumbnails/jawed.jpeg",
-			VideoURL:    "https://www.youtube.com/embed/jNQXAC9IVRw",
+			VideoURL:    "https://www.youtube.com/embed/ZFL09qhKi5I",
 			PageURL:     "index.html",
-			Description: "Me talking about elephants.",
-			Tags:        []string{"jawed", "youtube", "elephants"},
+			Description: "Hugo will allow you to create optimal website, but we shall overcome the \"Hugo Hump\" in this video. You gotta understand how templates and themes were before you get into the really impactful stuff.",
+			Tags:        []string{"hugo"},
 		},
 		{
-			Title:       "Gardening in the Sun: How to Grow Beautiful Flowers",
+			Title:       "Based Cooking now using HUGO!",
 			Thumbnail:   "../thumbnails/jawed.jpeg",
-			VideoURL:    "https://www.youtube.com/embed/jNQXAC9IVRw",
+			VideoURL:    "https://www.youtube.com/embed/jAXKSKb3etk",
 			PageURL:     "index.html",
-			Description: "Learn how to create a beautiful garden with these easy-to-follow steps.",
-			Tags:        []string{"gardening", "flowers", "sun"},
+			Description: "(NOTE: I released this video on my PeerTube instance (https://videos.lukesmith.xyz) a while ago and realized I forgot to upload it to YouTube, so here it is, and still relevant).",
+			Tags:        []string{"hugo"},
 		},
 		{
-			Title:       "The Secrets to Growing Healthy Herbs: Tips and Tricks",
+			Title:       "Simple Hugo Shortcodes absolutely MOG pathetic obese Wordpress!",
 			Thumbnail:   "../thumbnails/jawed.jpeg",
-			VideoURL:    "https://www.youtube.com/embed/jNQXAC9IVRw",
+			VideoURL:    "https://www.youtube.com/embed/QTolhoxMyXg",
 			PageURL:     "index.html",
-			Description: "Discover the best ways to grow healthy herbs for your garden.",
-			Tags:        []string{"gardening", "herbs", "health"},
-		},
-		{
-			Title:       "The Art of Gardening: Tips for Creating a Stunning Garden Bed",
-			Thumbnail:   "../thumbnails/jawed.jpeg",
-			VideoURL:    "https://www.youtube.com/embed/jNQXAC9IVRw",
-			PageURL:     "index.html",
-			Description: "Learn how to create a beautiful garden bed with these easy-to-follow steps.",
-			Tags:        []string{"gardening", "garden bed", "art"},
-		},
-		{
-			Title:       "The Science of Gardening: How Plants Grow and Thrive",
-			Thumbnail:   "../thumbnails/jawed.jpeg",
-			VideoURL:    "https://www.youtube.com/embed/jNQXAC9IVRw",
-			PageURL:     "index.html",
-			Description: "Discover the science behind how plants grow and thrive in your garden.",
-			Tags:        []string{"gardening", "science", "plants"},
-		},
-		{
-			Title:       "The Magic of Gardening: How to Create a Whimsical Garden",
-			Thumbnail:   "../thumbnails/jawed.jpeg",
-			VideoURL:    "https://www.youtube.com/embed/jNQXAC9IVRw",
-			PageURL:     "/",
-			Description: "Learn how to create a whimsical garden with these easy-to-follow steps.",
-			Tags:        []string{"gardening", "whimsical", "magic"},
+			Description: "We cover Hugo shortcodes and the basics of using them and Hugo commands to create scriptable sections of your site. We cover range for for-loops, site variables and page variables, including titles, summaries, date formatting, word count, reading time, tags and much more.",
+			Tags:        []string{"hugo"},
 		},
 	}
+
 	videosTemplate := ""
-	f, err := os.ReadFile("video.templ")
+	f, err := os.ReadFile("templates/video.html")
 	if err != nil {
 		log.Fatal(err)
 	}

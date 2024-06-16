@@ -1,0 +1,131 @@
+html {
+	background-color:#222222;
+	scrollbar-color: #ffffff #222222;
+}
+
+body {
+	max-width: 960px;
+	margin:0 auto;
+}
+
+a:link, a:visited, a:active{
+	color: lightblue;
+	font-family: 'Silom', sans-serif;
+}
+a:hover{
+	color: #fff;
+	font-family: 'Silom', sans-serif;
+}
+h1, h2, h3, a, p, ul, li, td, tr {
+	color: #ffffff;
+	font-family: 'Silom', sans-serif;
+}
+
+#main,
+#nav {
+	margin: 0 auto;
+	max-width: 50%;
+}
+
+hr {
+	border: none;
+	background: #ffffff;
+	color: #ffffff;
+	height: 1px;
+}
+
+#linkgrid {
+	border: 0 #ffffff;
+}
+
+#linkgrid td {
+	border: 4px ridge #ffffff;
+	width: 50%;
+	vertical-align: top;
+}
+
+.topnav {
+	position: relative;
+	overflow: hidden;
+	background-color: lightblue;
+	padding: 1%;
+}
+
+.topnav a, .topnav-centered a {
+	float: left;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.topnav a:hover {
+	text-decoration: underline;
+}
+
+.topnav a.active {
+	background-color: #ffffff;
+	color: white;
+}
+
+.topnav-centered a {
+	float: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+	float: right;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav a, .topnav-right {
+		float: none;
+		display: block;
+	}
+
+	.topnav-centered a {
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: none;
+	}
+}
+
+.button {
+	border: none;
+	color: #FAE57E;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+footer {
+	text-align: center;
+}
+
+.taglist {
+	text-align: center;
+	clear: both;
+	color: #ffffff;
+	font-family: 'Silom', sans-serif;
+}
+
+#prevart {
+	float: left;
+	text-align: left;
+	color: white;
+	text-decoration: underline;
+}
+#nextart {
+	float: right;
+	text-align: right;
+	color: white;
+	text-decoration: underline;
+}
