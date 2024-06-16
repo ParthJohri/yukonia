@@ -3,11 +3,11 @@ package main
 import (
 	"bytes"
 	"fmt"
+	"html/template"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
-	"text/template"
 )
 
 type Video struct {

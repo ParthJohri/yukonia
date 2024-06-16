@@ -1,5 +1,0 @@
-Title:       "Me at the zoo",
-Thumbnail:   "../thumbnails/jawed.jpeg",
-VideoURL:    "https://www.youtube.com/embed/jNQXAC9IVRw",
-Description: "Me talking about elephants.",
-Tags:        []string{"jawed", "youtube", "elephants"},
