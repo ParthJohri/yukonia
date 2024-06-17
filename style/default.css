@@ -96,7 +96,8 @@ hr {
 
 .button {
 	border: none;
-	color: lightblue;
+	color: white;
+	background-color: lightblue;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;

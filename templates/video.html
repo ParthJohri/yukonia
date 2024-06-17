@@ -7,9 +7,6 @@
 <link rel='manifest' href="/favicon/site.webmanifest">
 <title>Videos</title>
 <html>
-<head>
-
-</head>
 <body>
     <hr>
     <div class="topnav">
@@ -22,11 +19,18 @@
     </div>
 	<hr>
 {{range .}}
-    <div class="video-container">
-        <h2>{{.Title}}</h2>
-        <iframe width="640" height="360" style="align-items: center;" src="{{.VideoURL}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p style="text-align: left;">{{.Description}}</p>
+<br>
+<div class="video-container">
+    <div style="display: flex;">
+            <a href="{{.PageURL}}"><img src="{{.Thumbnail}}" alt="thumbnail" width="320" height="180" class="video"></a>
+                <div>
+                    <a href="{{.PageURL}}"><p>{{.Title}}</p></a>
+                    <p style="text-align: left;">{{.Description}}</p>
+                </div>
+            <button class="button">Watch</button>
     </div>
+</div>
+<br>
      {{end}}
      <footer><p>made with ♥ by <a href="https://github.com/username">username</a></p></footer>
 </body>

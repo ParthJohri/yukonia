@@ -23,15 +23,14 @@ func main() {
 	videos := []Video{
 		{
 			Title:       "Hugo Actually Explained (Websites, Themes, Layouts, and Intro to Scripting)",
-			Thumbnail:   "../thumbnails/jawed.jpeg",
-			VideoURL:    "https://www.youtube.com/embed/ZFL09qhKi5I",
+			Thumbnail:   "https://i.ytimg.com/vi/ZFL09qhKi5I/hq720.jpg",
 			PageURL:     "index.html",
 			Description: "Hugo will allow you to create optimal website, but we shall overcome the \"Hugo Hump\" in this video. You gotta understand how templates and themes were before you get into the really impactful stuff.",
 			Tags:        []string{"hugo"},
 		},
 		{
 			Title:       "Based Cooking now using HUGO!",
-			Thumbnail:   "../thumbnails/jawed.jpeg",
+			Thumbnail:   "https://i.ytimg.com/vi/jAXKSKb3etk/hqdefault.jpg",
 			VideoURL:    "https://www.youtube.com/embed/jAXKSKb3etk",
 			PageURL:     "index.html",
 			Description: "(NOTE: I released this video on my PeerTube instance (https://videos.lukesmith.xyz) a while ago and realized I forgot to upload it to YouTube, so here it is, and still relevant).",
@@ -39,7 +38,7 @@ func main() {
 		},
 		{
 			Title:       "Simple Hugo Shortcodes absolutely MOG pathetic obese Wordpress!",
-			Thumbnail:   "../thumbnails/jawed.jpeg",
+			Thumbnail:   "https://i.ytimg.com/vi/QTolhoxMyXg/hq720.jpg",
 			VideoURL:    "https://www.youtube.com/embed/QTolhoxMyXg",
 			PageURL:     "index.html",
 			Description: "We cover Hugo shortcodes and the basics of using them and Hugo commands to create scriptable sections of your site. We cover range for for-loops, site variables and page variables, including titles, summaries, date formatting, word count, reading time, tags and much more.",
