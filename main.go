@@ -79,7 +79,7 @@ func writeHTML(templateString, videos interface{}, buildDir string) error {
 		return err
 	}
 
-	err = ioutil.WriteFile(filepath.Join(buildDir, "index.html"), videosHTML.Bytes(), os.ModePerm)
+	err = ioutil.WriteFile(filepath.Join(buildDir, "videos.html"), videosHTML.Bytes(), os.ModePerm)
 	if err != nil {
 		return err
 	}
