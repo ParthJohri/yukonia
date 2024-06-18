@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YukoniaVIDEO</title>
+        <link rel="stylesheet" href="../style/default.css">
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body>
+        <hr>
+        <div class="topnav">
+            <!-- Left-aligned links (default) -->
+            <a href="/">₪ Home</a>
+            <!-- Right-aligned links -->
+            <div class="topnav-right">
+                <a href="https://github.com/neetware/yukonia">GitHub</a>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <main>
+            <div class="video">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="sidebar">
+                <h3>Related Videos:</h3>
+                <ul>
+                    {{range .}}        
+                        <div class="related-video">
+                            <a href="{{.PageURL}}">
+                                <img src="{{.Thumbnail}}" alt="Thumbnail" class="thumbnail video">
+                            </a>
+                            <div class="related-video-info">
+                                <p class="title">{{.Title}}</p>
+                                <a href=""><p class="tags">{{.Tags}}</p></a>
+                            </div>
+                        </div>
+                    {{end}}
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
+<footer><p>made with ♥ by <a href="https://github.com/username">username</a></p></footer>
+</body>
+</html>
+

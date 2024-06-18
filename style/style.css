@@ -17,3 +17,28 @@
 .video {
     border: 1px solid lightblue;
 }
+
+
+body {
+	max-width: 1282px;
+	margin:0 auto;
+}
+
+.title, tags {
+    text-align: left;
+}
+
+.thumbnail {
+    width: 184px;
+    height: 96px;
+}
+
+.related-video {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.related-video-info {
+    margin-left: 1em;
+}
+
