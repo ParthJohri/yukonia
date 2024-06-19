@@ -16,11 +16,12 @@
 
 .video {
     border: 1px solid lightblue;
+    max-height: 722px;
 }
 
 
 body {
-	max-width: 1282px;
+	max-width: 1284px;
 	margin:0 auto;
 }
 
@@ -42,3 +43,6 @@ body {
     margin-left: 1em;
 }
 
+.title {
+    font-size: 1.2em;
+}
