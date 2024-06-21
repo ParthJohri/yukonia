@@ -19,6 +19,13 @@
     max-height: 722px;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
 
 body {
 	max-width: 1284px;
@@ -43,15 +50,15 @@ body {
     margin-left: 1em;
 }
 
-.title {
-
+main {
+    flex: 1;
 }
 
 div.scroll {
     margin: 4px, 4px;
     padding: 4px;
     width: 500px;
-    height: 510px;
+    height: 1080px;
     overflow-x: hidden;
     overflow-y: auto;
     text-align: justify;

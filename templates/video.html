@@ -7,7 +7,7 @@
 <link rel='manifest' href="/favicon/site.webmanifest">
 <title>Video</title>
 <html>
-<body>
+    <body>
         <hr>
         <div class="topnav">
             <!-- Left-aligned links (default) -->
@@ -18,32 +18,38 @@
             </div>
         </div>
         <hr>
-        <br>
-        <main>
-            <center>
-                <div>
-                    <iframe  class="video" width="960" height="540" src="https://www.youtube.com/embed/ZFL09qhKi5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </center>
-            <center>
-                <div class="scroll">
-                    <h3>Related Videos:</h3>
-                    <ul>
-                        {{range .}}        
-                            <div class="related-video">
-                                <a href="{{.PageURL}}">
-                                    <img src="{{.Thumbnail}}" alt="Thumbnail" class="thumbnail video">
-                                </a>
-                                <div class="related-video-info">
-                                    <p class="title">{{.Title}}</p>
-                                    <a href=""><p class="tags">{{.Tags}}</p></a>
+        <center>
+            <div class="container">
+                <div class="video-container">
+                    <div style="display: flex;">
+                        <div style="flex: 1;">
+                            <h1 style="color: lightblue; text-align: left;">HUGO Test Title</h1>
+                            <iframe class="video" width="960" height="540" src="https://www.youtube.com/embed/ZFL09qhKi5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div style="flex: 1;">
+                            <main>
+                                <div class="scroll">
+                                    <h3 style="color: lightblue; text-align: left; padding-left: 40px;">Related Videos:</h3>
+                                    <ul>
+                                        {{range .}}
+                                            <div class="related-video">
+                                                <a href="{{.PageURL}}">
+                                                    <img src="{{.Thumbnail}}" alt="Thumbnail" class="thumbnail video">
+                                                </a>
+                                                <div class="related-video-info">
+                                                    <p class="title">{{.Title}}</p>
+                                                    <a href=""><p class="tags">{{.Tags}}</p></a>
+                                                </div>
+                                            </div>
+                                        {{end}}
+                                    </ul>
                                 </div>
-                            </div>
-                        {{end}}
-                    </ul>
+                            </main>
+                        </div>
+                    </div>
                 </div>
-            </center>
-        </main>
+            </div>
+        </center>
     </body>
 </html>
 <footer><p>made with ♥ by <a href="https://github.com/username">username</a></p></footer>
