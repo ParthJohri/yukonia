@@ -20,25 +20,29 @@
         <hr>
         <br>
         <main>
-            <div class="video">
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/ZFL09qhKi5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="sidebar">
-                <h3>Related Videos:</h3>
-                <ul>
-                    {{range .}}        
-                        <div class="related-video">
-                            <a href="{{.PageURL}}">
-                                <img src="{{.Thumbnail}}" alt="Thumbnail" class="thumbnail video">
-                            </a>
-                            <div class="related-video-info">
-                                <p class="title">{{.Title}}</p>
-                                <a href=""><p class="tags">{{.Tags}}</p></a>
+            <center>
+                <div>
+                    <iframe  class="video" width="960" height="540" src="https://www.youtube.com/embed/ZFL09qhKi5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </center>
+            <center>
+                <div class="scroll">
+                    <h3>Related Videos:</h3>
+                    <ul>
+                        {{range .}}        
+                            <div class="related-video">
+                                <a href="{{.PageURL}}">
+                                    <img src="{{.Thumbnail}}" alt="Thumbnail" class="thumbnail video">
+                                </a>
+                                <div class="related-video-info">
+                                    <p class="title">{{.Title}}</p>
+                                    <a href=""><p class="tags">{{.Tags}}</p></a>
+                                </div>
                             </div>
-                        </div>
-                    {{end}}
-                </ul>
-            </div>
+                        {{end}}
+                    </ul>
+                </div>
+            </center>
         </main>
     </body>
 </html>
