@@ -15,3 +15,11 @@ You can then generate the HTML.
 ```bash
 go run main.go
 ```
+
+## Screenshots:
+
+This is how the Homepage looks like:
+![alt text](homepage.png "home page")
+
+This is how the Video page looks like:
+![alt text](video.png "video page")
