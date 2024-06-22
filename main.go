@@ -45,7 +45,7 @@ func main() {
 
 func generateHTML(videos []Video) error {
 	// Read the template file
-	t, err := template.ParseFiles("templates/video.html")
+	t, err := template.ParseFiles("templates/videos.template")
 	if err != nil {
 		return err
 	}

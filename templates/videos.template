@@ -32,7 +32,6 @@
 </div>
 <br>
      {{end}}
-     <footer><p>made with ♥ by <a href="https://github.com/username">username</a></p></footer>
+     <footer><p>made with ♥ by <a href="https://github.com/neetware/yukonia">Yukonia Team</a></p></footer>
 </body>
 </html>
-
